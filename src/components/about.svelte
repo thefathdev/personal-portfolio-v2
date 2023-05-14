@@ -1,0 +1,79 @@
+<script lang="ts">
+  import { TextLink } from "./ui";
+
+  let profileSrc = "/profile.jpg";
+</script>
+
+<div
+  id="about"
+  class="min-h-screen flex flex-col justify-center max-w-5xl mx-auto px-8 md:px-20 lg:px-24 xl:px-8 py-16"
+>
+  <div class="flex gap-2 items-center mb-4 sm:mb-6">
+    <div class="w-14 h-[2px] bg-gray-500 md:w-16" />
+    <h2 class="text-gray-900 font-bold text-2xl sm:text-4xl lg:text-5xl">
+      About Me
+    </h2>
+  </div>
+  <div class="md:flex md:flex-row md:gap-9">
+    <div class="flex flex-col">
+      <div class="mb-7 sm:mb-12">
+        <div
+          class="text-base sm:text-xl font-medium text-gray-500 max-w-[54ch] mb-3 sm:mb-5"
+        >
+          Hello! My name is <TextLink href="https://github.com/whatTheFath"
+            >Fathul</TextLink
+          >{" "}
+          and I enjoy developing things for the modern web. My interest in programming
+          started back in 2021 when I decided to directly dive into web development
+          instead of taking college.
+        </div>
+        <div
+          class="text-base sm:text-xl font-medium text-gray-500 max-w-[54ch] mb-3 sm:mb-5"
+        >
+          Moving forward, my main focus these days is building products with
+          accesibility and responsiveness without setting aside performance.{" "}
+          <TextLink href="mailto:abdillahfathu@gmail.com">
+            I’m looking forward to a new opportunity
+          </TextLink>{" "}
+          while exploring the web.
+        </div>
+        <p
+          class="text-base sm:text-xl font-medium text-gray-500 max-w-[54ch] mb-3 sm:mb-5"
+        >
+          Technologies I’ve been working on:
+        </p>
+        <div class="flex gap-14 pl-6">
+          <ul class="text-base sm:text-xl font-medium text-gray-500 list-disc">
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Svelte</li>
+            <li>Node.js</li>
+            <li>Framer Motion</li>
+          </ul>
+          <ul class="text-base sm:text-xl font-medium text-gray-500 list-disc">
+            <li>TypeScript</li>
+            <li>Next.js</li>
+            <li>Sass/Scss</li>
+            <li>Express.js</li>
+            <li>Tailwindcss</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="group max-w-[180px] sm:max-w-xs mx-auto relative md:self-start">
+      <div
+        class="absolute top-0 right-0 w-full h-full border-solid border-gray-900 border-2 rounded-xl translate-x-3 translate-y-2.5 group-hover:translate-x-2 group-hover:translate-y-1.5 transition-transform"
+      />
+      <img
+        class="relative rounded-xl filter"
+        src={profileSrc}
+        width={400}
+        height={400}
+        alt="Fathul Irfaan Abdillah"
+      />
+      <div
+        class="absolute top-0 right-0 w-full h-full rounded-xl backdrop-saturate-0 bg-white/10 group-hover:backdrop-saturate-100 transition"
+      />
+    </div>
+  </div>
+</div>
