@@ -1,15 +1,16 @@
-<script lang="ts">
-  import { TextLink } from "./ui";
+---
+import Image from "astro/components/Image.astro";
+import { TextLink } from "./ui";
 
-  let profileSrc = "/profile.jpg";
-</script>
+let profileSrc = "/profile.jpg";
+---
 
 <div
   id="about"
   class="min-h-screen flex flex-col justify-center max-w-5xl mx-auto px-8 md:px-20 lg:px-24 xl:px-8 py-16"
 >
   <div class="flex gap-2 items-center mb-4 sm:mb-6">
-    <div class="w-14 h-[2px] bg-gray-500 md:w-16" />
+    <div class="w-14 h-[2px] bg-gray-500 md:w-16"></div>
     <h2 class="text-gray-900 font-bold text-2xl sm:text-4xl lg:text-5xl">
       About Me
     </h2>
@@ -20,9 +21,9 @@
         <div
           class="text-base sm:text-xl font-medium text-gray-500 max-w-[54ch] mb-3 sm:mb-5"
         >
-          Hello! My name is <TextLink href="https://github.com/whatTheFath"
-            >Fathul</TextLink
-          >{" "}
+          Hello! My name is <TextLink href="https://github.com/whatTheFath">
+            Fathul
+          </TextLink>{" "}
           and I enjoy developing things for the modern web. My interest in programming
           started back in 2021 when I decided to directly dive into web development
           instead of taking college.
@@ -31,7 +32,9 @@
           class="text-base sm:text-xl font-medium text-gray-500 max-w-[54ch] mb-3 sm:mb-5"
         >
           Moving forward, my main focus these days is building products with
-          accesibility and responsiveness without setting aside performance.{" "}
+          accesibility and responsiveness without setting aside performance.{
+            " "
+          }
           <TextLink href="mailto:abdillahfathu@gmail.com">
             I’m looking forward to a new opportunity
           </TextLink>{" "}
@@ -63,8 +66,9 @@
     <div class="group max-w-[180px] sm:max-w-xs mx-auto relative md:self-start">
       <div
         class="absolute top-0 right-0 w-full h-full border-solid border-gray-900 border-2 rounded-xl translate-x-3 translate-y-2.5 group-hover:translate-x-2 group-hover:translate-y-1.5 transition-transform"
-      />
-      <img
+      >
+      </div>
+      <Image
         class="relative rounded-xl filter"
         src={profileSrc}
         width={400}
@@ -73,7 +77,8 @@
       />
       <div
         class="absolute top-0 right-0 w-full h-full rounded-xl backdrop-saturate-0 bg-white/10 group-hover:backdrop-saturate-100 transition"
-      />
+      >
+      </div>
     </div>
   </div>
 </div>
